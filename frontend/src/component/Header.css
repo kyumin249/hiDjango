@@ -1,0 +1,22 @@
+.name {
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+}
+
+.name h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* 마우스 호버 효과 */
+.name h2:hover {
+  color: #2563eb;
+}

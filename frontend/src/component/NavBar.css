@@ -1,0 +1,24 @@
+.hello > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+/* 각 메뉴 항목(li) 및 글자 스타일 */
+.hello > ul > li {
+    color: #ffffff;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+/* 마우스 호버(Hover) 시 배경색 변경 */
+.hello > ul > li:hover {
+    background-color: #555555;
+}
