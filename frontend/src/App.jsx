@@ -10,9 +10,9 @@ function App() {
     <>
       < Header />
       <NavBar />
-      <div className='name'>
+      <div className='name2'>
         <Aside />
-        <MainArticle />
+        <MainArticle className='main2'/>
       </div>
       
     </>
