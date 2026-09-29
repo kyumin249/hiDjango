@@ -1,8 +1,8 @@
-const Aside = () =>  {
+const Aside = ({className}) =>  {
     return (
-        <aside>
+        <aside >
             
-            <ul>
+            <ul className={className}>
                 <h3>aside list</h3>
                 <li>dumy Item</li>
                 <li>dumy Item</li>
