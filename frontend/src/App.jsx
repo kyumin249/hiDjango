@@ -1,22 +1,12 @@
-import NavBar from './component/NavBar.jsx';
-import Header from './component/Header.jsx';
-import Aside from './component/Aside.jsx';
-import MainArticle from './component/MainArticle.jsx';
-import Footer from './component/Footer.jsx';
+import MainPage from './pages/MainPage.jsx';
 import './App.css';
 function App() {
   
 
   return (
-    <div className='first'>
-      < Header />
-      <NavBar />
-      <div className='name2'>
-        <Aside className='sidebar'/>
-        <MainArticle className='main2'/>
-      </div>
-      <Footer className='Footer'/>
-    </div>
+    <>
+      <MainPage />
+    </>
   )
 }
 
