@@ -1,0 +1,14 @@
+{% load django_vite %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Django x React</title>
+    <!-- Vite HMR 및 React 스크립트 불러오기 -->
+    {% vite_hmr_client %}
+    {% vite_asset '../../frontend/src/main.jsx' %}
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

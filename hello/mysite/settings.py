@@ -37,8 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'django_vite'
     'myapp'
 ]
+
+# Vite / React 개발 서버 설정
+DJANGO_VITE = {
+    'default': {
+        'dev_mode': True, # 개발 모드 활성화 (npm run dev 실행 중일 때)
+        'dev_server_host': 'localhost',
+        'dev_server_port': 5173,
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -48,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -126,3 +139,10 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+import os
+STATIC_URL = 'static/'
+STATICFILES_DIRS= [
+    os.path.join(BASE_DIR, 'frontend')
+]
+
