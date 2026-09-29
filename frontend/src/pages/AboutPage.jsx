@@ -1,10 +1,10 @@
 import NavBar from '../component/NavBar.jsx';
 import Header from '../component/Header.jsx';
 import Aside from '../component/Aside.jsx';
-import HomeArticle from '../component/HomeArticle.jsx';
+import AboutArticle from '../component/AboutArticle.jsx';
 import Footer from '../component/Footer.jsx';
-import './MainPage.css';
-function MainPage() {
+import './AboutPage.css';
+function AboutPage() {
   
 
   return (
@@ -13,11 +13,11 @@ function MainPage() {
       <NavBar />
       <div className='name2'>
         <Aside className='sidebar'/>
-        <HomeArticle className='main2'/>
+        <AboutArticle className='main5'/>
       </div>
       <Footer className='Footer'/>
     </div>
   )
 }
 
-export default MainPage;
+export default AboutPage;

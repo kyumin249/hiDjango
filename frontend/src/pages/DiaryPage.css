@@ -41,11 +41,11 @@ html, body, #root {
 }
 
 /* 5. 메인 영역 */
-.main2 {
+.main4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: red;
     flex: 1;
     overflow-y: auto; /* 내용이 넘치면 이 구역 내부에서만 스크롤 */
 }

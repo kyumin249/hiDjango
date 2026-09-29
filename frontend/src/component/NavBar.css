@@ -1,24 +1,26 @@
-.hello ul{
+.hello ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: center;
     margin: 0;
     padding: 0;
-    background: #333;
+    background: white;
 }
 
-/* 각 메뉴 항목(li) 및 글자 스타일 */
-.hello ul li {
-    color: #ffffff;
-    padding: 14px 24px;
-    cursor: pointer;
+/* Link(a 태그) 선택자 지정 및 기본 밑줄/색상 제거 */
+.hello ul li a {
+    display: block;            /* padding 영역까지 클릭 가능하도록 확장 */
+    color: black;              /* 기본 글자색 지정 */
+    text-decoration: none;     /* 보라색/파란색 밑줄 제거 */
+    padding: 14px 24px;        /* padding을 a 태그에 직접 지정 */
     font-size: 16px;
     font-weight: 500;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* 마우스 호버(Hover) 시 배경색 변경 */
-.hello ul li:hover {
-    background-color: #555555;
+/* 마우스 호버(Hover) 시 효과 */
+.hello ul li a:hover {
+    background-color: green;
+    color: white;              /* 배경 변경 시 글자색 흰색 변경 */
 }

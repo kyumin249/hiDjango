@@ -1,21 +1,23 @@
-import {useEffect, useState} from 'reeact';
 import MainPage from './pages/MainPage.jsx';
-import axios from 'axios';
-import './App.css';
+import AboutPage from './pages/AboutPage.jsx';
+import DiaryPage from './pages/DiaryPage.jsx';
+import ItemsPage from './pages/ItemsPage.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    axios.get('/api/hello/')
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.error("Django 연동 에러:", error);
-      });
-  }, []);
+
   return (
     <>
-      <MainPage />
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/diary" element={<DiaryPage />} />
+            <Route path="/items" element={<ItemsPage />} />
+          </Routes>
+      </BrowserRouter>
+    
+
     </>
   )
 }
