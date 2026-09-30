@@ -1,7 +1,7 @@
 const HomeArticle = ({className}) => {
     return (
         <div className={className}>
-            <h2>Hi Home article!!</h2>
+            <h2>New Login</h2>
         </div>
     )
 }
