@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './LoginPage.css';
 const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -20,7 +21,7 @@ const LoginPage = () => {
 
     return (
         <div className="login-page">
-            <h2>hello, my blog!!</h2>
+            <h2 className='login-title'>hello, my blog!!</h2>
             <input 
                 type="text" 
                 placeholder="Username" 
