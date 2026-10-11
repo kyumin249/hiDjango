@@ -21,5 +21,5 @@ def info(request):
         mydescription = request.POST.get("mydescription")
         email = request.POST.get("email")
         myhistory = request.POST.get("myhistory")
-        return HttpResponse("my info is %s.", myhistory)
+        return HttpResponse("my info is %s, %s, %s, %s.", myname, mydescription, email, myhistory)
 
