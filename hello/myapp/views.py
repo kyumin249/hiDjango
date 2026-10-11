@@ -8,7 +8,8 @@ def index(request):
         if request.GET == "Login":
             return render(request, "login.html")
         if request.GET == "About":
-            return render(request, "about.html")
+            context = info(request.POST)
+            return render(request, "about.html", context)
         if request.GET == "diary":
             return render(request, "diary.html")
         if request.GET == "info":
