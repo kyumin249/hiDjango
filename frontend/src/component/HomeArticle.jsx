@@ -1,7 +1,7 @@
 const HomeArticle = ({className}) => {
     return (
         <div className={className}>
-            <h2>New Login</h2>
+            <h2>my name is kyumin</h2>
         </div>
     )
 }
